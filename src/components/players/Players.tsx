@@ -1,14 +1,16 @@
-import { use, useState } from "react";
+import { use, useState, type Dispatch, type SetStateAction } from "react";
 import type { IPlayer } from "../../types/playerType";
 import AvailablePlayers from "./AvailablePlayers";
 
 interface PlayersProps {
     playersPromise: Promise<IPlayer[]>;
+    coin: number;
+    setCoin: Dispatch<SetStateAction<number>>;
 }
 
 type SwtichTab = "available" | "selected";
 
-const Players = ({ playersPromise }: PlayersProps) => {
+const Players = ({ playersPromise, coin, setCoin }: PlayersProps) => {
     const playersData = use(playersPromise);
     const [activeTab, setActiveTab] = useState<SwtichTab>("available");
 
@@ -30,7 +32,7 @@ const Players = ({ playersPromise }: PlayersProps) => {
             <div>
                 {
                     activeTab === "available" ? 
-                    <AvailablePlayers playersData={playersData} /> 
+                    <AvailablePlayers playersData={playersData} coin={coin} setCoin={setCoin} /> 
                     : 
                     <div>Selected Tab</div>
                 }

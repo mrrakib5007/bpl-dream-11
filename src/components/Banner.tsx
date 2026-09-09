@@ -1,7 +1,14 @@
 import BannerLogo from "../assets/banner-main.png";
 import BgShadow from "../assets/bg-shadow.png";
 
-const Banner = () => {
+interface BannerProps {
+  handleFreeCriditButton: () => void;
+  isBonusClaim: boolean;
+
+  
+}
+
+const Banner = ({handleFreeCriditButton, isBonusClaim}: BannerProps) => {
   return (
     <div 
       className="container mx-auto rounded-xl bg-black bg-cover bg-center bg-no-repeat relative overflow-hidden py-16 px-6 md:py-24 md:px-12 text-center min-h-100 md:min-h-120 flex items-center justify-center"
@@ -15,8 +22,10 @@ const Banner = () => {
         <p className="text-gray-400 text-sm md:text-base">
           Beyond Boundaries Beyond Limits
         </p>
-        <button className="bg-amber-300 text-gray-900 font-semibold py-2.5 px-4 rounded-md cursor-pointer">
-          Claim Free Credit
+        <button onClick={handleFreeCriditButton} type="button" className="bg-amber-300 text-gray-900 font-semibold py-2.5 px-4 rounded-md cursor-pointer">
+          {
+            isBonusClaim ? "Credit Claimed": "Claim Free Credit"
+          }
         </button>
       </div>
     </div>

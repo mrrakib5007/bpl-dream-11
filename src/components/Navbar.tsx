@@ -4,8 +4,11 @@ import CoinIcon from "../assets/coin-icon.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
-const Navbar = () => {
-    const [coin, setCoin] = useState<number>(5000);
+interface Coin {
+    coin: number
+}
+
+const Navbar = ({ coin }: Coin) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     
 
@@ -37,7 +40,7 @@ const Navbar = () => {
                         <li className="cursor-pointer hover:text-black transition-colors">Schedules</li>
                     </ul>
                     <div className="flex items-center cursor-pointer gap-1.5 border border-gray-200 py-2 px-3 rounded-md shadow-xs hover:border-gray-300 transition-all">
-                        <span className="font-semibold">{coin} Coin</span>
+                        <span className="font-semibold">${coin} Coin</span>
                         <img className="max-w-6.5" src={CoinIcon} alt="Coin" />
                     </div>
                 </div>
