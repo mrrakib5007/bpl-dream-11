@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
-    const [coin, setCoin] = useState<number>(0);
+    const [coin, setCoin] = useState<number>(5000);
     const [isOpen, setIsOpen] = useState<boolean>(false);
     
 

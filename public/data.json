@@ -1,0 +1,122 @@
+[
+  {
+    "playerId": "p-01",
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "All-Rounder",
+    "battingType": "Left-hand Bat",
+    "bowlingType": "Slow left-arm orthodox",
+    "biddingPrice": 5000
+  },
+  {
+    "playerId": "p-02",
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "Bowler",
+    "battingType": "Left-hand Bat",
+    "bowlingType": "Left-arm fast-medium",
+    "biddingPrice": 12000
+  },
+  {
+    "playerId": "p-03",
+    "name": "Liton Das",
+    "country": "Bangladesh",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "Wicketkeeper-Batter",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "None",
+    "biddingPrice": 3000
+  },
+  {
+    "playerId": "p-04",
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "Batsman",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": 10000
+  },
+  {
+    "playerId": "p-05",
+    "name": "Rohit Sharma",
+    "country": "India",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "Batsman",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Right-arm offbreak",
+    "biddingPrice": 8000
+  },
+  {
+    "playerId": "p-06",
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "Bowler",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": 10000
+  },
+  {
+    "playerId": "p-07",
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "Bowler",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Legbreak googly",
+    "biddingPrice": 11000
+  },
+  {
+    "playerId": "p-08",
+    "name": "Mohammad Nabi",
+    "country": "Afghanistan",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "All-Rounder",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Right-arm offbreak",
+    "biddingPrice": 6000
+  },
+  {
+    "playerId": "p-09",
+    "name": "Rahmanullah Gurbaz",
+    "country": "Afghanistan",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "Wicketkeeper-Batter",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "None",
+    "biddingPrice": 5000
+  },
+  {
+    "playerId": "p-10",
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "Batsman",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Right-arm offbreak",
+    "biddingPrice": 8000
+  },
+  {
+    "playerId": "p-11",
+    "name": "Shaheen Afridi",
+    "country": "Pakistan",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "Bowler",
+    "battingType": "Left-hand Bat",
+    "bowlingType": "Left-arm fast",
+    "biddingPrice": 10000
+  },
+  {
+    "playerId": "p-12",
+    "name": "Mohammad Rizwan",
+    "country": "Pakistan",
+    "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+    "role": "Wicketkeeper-Batter",
+    "battingType": "Right-hand Bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": 6000
+  }
+]
