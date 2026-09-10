@@ -13,7 +13,7 @@ interface SelectedPlayersProps {
 
 const SelectedPlayers = ({ coin, setCoin, selectedPlayers, setSelectedPlayers }: SelectedPlayersProps) => {
   return (
-    <div className="p-5">
+    <div className="">
         <div className="grid grid-cols-1 gap-5">
         {
             selectedPlayers.length > 0 ? 

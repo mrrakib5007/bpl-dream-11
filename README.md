@@ -1,75 +1,51 @@
-# React + TypeScript + Vite
+# Dream 11 Cricket Team
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+A modern and responsive cricket team selection web application built with **React, TypeScript, Tailwind CSS, and DaisyUI**. Users can claim free credits, browse available players, select players within their budget, and manage their selected team.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**GitHub Repo:** [https://github.com/mrrakib5007/bpl-dream-11](https://github.com/mrrakib5007/bpl-dream-11) 
 
-## React Compiler
+**Live Preview:** [https://mr-bpl-dream-11.netlify.app](https://mr-bpl-dream-11.netlify.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- 🎁 **Free Credit Claim** - Claim 50,000 free credits and prevent duplicate claims.
+- **Credit Management** - Player bidding prices are deducted from the available credits.
+- **Available Players** - Browse players with their name, country, role, batting style, bowling style, and bidding price.
+- **Player Selection** - Select players based on available credits.
+- **Maximum 6 Players** - Users can select a maximum of 6 players.
+- **Remove Players** - Remove selected players and automatically restore their bidding price.
+- **Available / Selected Tabs** - Switch between available players and selected players.
+- **Selected Player Counter** - Displays the current selected player count out of 6.
+- **Toast Notifications** - Provides success and error feedback using React Toastify.
+- **Responsive Design** - Optimized for mobile, tablet, and desktop devices.
+- **Responsive Navbar** - Includes a mobile hamburger menu and desktop navigation.
+- **Consistent Player Images** - Uses `object-cover` and `object-center` for consistent image cropping.
+- **Suspense Data Loading** - Loads player data asynchronously using React Suspense.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies Used
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **DaisyUI**
+- **React Icons**
+- **React Toastify**
+- **Google Fonts - Sora**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Project Preview
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+<div align="center">
+  <img src="./src/assets/site_preview1.jpg" alt="Dream 11 Cricket Team Preview 1" width="100%">
+</div>
+<div align="center">
+  <img src="./src/assets/site_preview2.jpg" alt="Dream 11 Cricket Team Preview 2" width="100%">
+</div>
 
-```
+## Developer
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+**MrRakib5007**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+Built with ❤️ using React, TypeScript, and Tailwind CSS.

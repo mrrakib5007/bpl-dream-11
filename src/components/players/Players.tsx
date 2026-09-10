@@ -19,17 +19,17 @@ const Players = ({ playersPromise, coin, setCoin, selectedPlayers, setSelectedPl
 
 
     return (
-        <div className="container mx-auto my-16">
+        <div className="container mx-auto my-16 p-5">
            <div className="flex justify-between items-center mb-6">
-                <h1 className="text-2xl font-semibold">
+                <h1 className="text-base lg:text-2xl font-semibold">
                     {
                         activeTab === "available" ?  "Available Players" : `Selected Players (${selectedPlayers.length}/6)`
                     }
                 </h1>
                 <div>
-                    <button onClick={() => setActiveTab("available")} className={`btn btn-active rounded-r-none border-r-0 shadow-none ${activeTab === "available" ? "bg-[#E7FE29] border-[#E7FE29] text-black" : "bg-transparent border-gray-300 text-gray-500"}`}>Available</button>
+                    <button onClick={() => setActiveTab("available")} className={`btn btn-active text-xs lg:text-base rounded-r-none border-r-0 shadow-none ${activeTab === "available" ? "bg-[#E7FE29] border-[#E7FE29] text-black" : "bg-transparent border-gray-300 text-gray-500"}`}>Available</button>
                     
-                    <button onClick={() => setActiveTab("selected")} className={`btn btn-active rounded-l-none border-l-0 shadow-none ${activeTab === "available" ? "bg-transparent border-gray-300 text-gray-500" : "bg-[#E7FE29] border-[#E7FE29] text-black"}`}>Selected ({selectedPlayers.length})</button>
+                    <button onClick={() => setActiveTab("selected")} className={`btn btn-active text-xs lg:text-base rounded-l-none border-l-0 shadow-none ${activeTab === "available" ? "bg-transparent border-gray-300 text-gray-500" : "bg-[#E7FE29] border-[#E7FE29] text-black"}`}>Selected ({selectedPlayers.length})</button>
                 </div>
             </div>
             <div>
