@@ -6,15 +6,31 @@ interface PlayerProps {
     player: IPlayer;
     coin: number;
     setCoin: Dispatch<SetStateAction<number>>;
+    selectedPlayers: IPlayer[];
+    setSelectedPlayers: Dispatch<SetStateAction<IPlayer[]>>;
 }
 
-const PlayerCard = ({ player, coin, setCoin }: PlayerProps) => {
+const PlayerCard = ({ player, coin, setCoin, selectedPlayers, setSelectedPlayers }: PlayerProps) => {
   const { name, country, image, role, battingType, bowlingType, biddingPrice } = player;
   const [isSelected, setisSelected] = useState(false);
 
-  const handleSelectPlayer = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    if (coin < biddingPrice) {
+  const handleSelectPlayer = () => {
+
+    if (selectedPlayers.length >= 6) {
+      return toast.error('You can purchase a maximum of 6 players.', {
+              position: "top-right",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: false,
+              draggable: false,
+              progress: undefined,
+              theme: "light",
+              transition: Slide,
+              });
+    }
+
+        if (coin < biddingPrice) {
       return toast.error('Insufficient Balance', {
               position: "top-right",
               autoClose: 3000,
@@ -27,9 +43,12 @@ const PlayerCard = ({ player, coin, setCoin }: PlayerProps) => {
               transition: Slide,
               });
     }
+
     const remainingCoin = coin - biddingPrice;
     setCoin(remainingCoin);
     setisSelected(true);
+
+    setSelectedPlayers([...selectedPlayers, player]);
 
     toast.success('Player purchase successful', {
     position: "top-right",

@@ -13,7 +13,10 @@ const playersPromise: Promise<IPlayer[]> = fetch("/data.json")
 function App() {
   const [coin, setCoin] = useState<number>(0);
   const [isBonusClaim, setIsBonusClaim] = useState(false);
+  const [selectedPlayers, setSelectedPlayers] = useState<IPlayer[]>([]);
 
+  console.log(selectedPlayers)
+ 
   const handleFreeCriditButton = () => {
     if (isBonusClaim) {
        return toast.error('Already Claimed', {
@@ -66,7 +69,13 @@ function App() {
         <Navbar coin={coin} />
         <Banner handleFreeCriditButton={handleFreeCriditButton} isBonusClaim={isBonusClaim} />
         <Suspense fallback={<h1>Loading...</h1>}>
-          <Players playersPromise={playersPromise} coin={coin} setCoin={setCoin} />
+          <Players 
+              playersPromise={playersPromise} 
+              coin={coin} 
+              setCoin={setCoin} 
+              selectedPlayers={selectedPlayers}
+              setSelectedPlayers={setSelectedPlayers}
+               />
         </Suspense>
       </div>
     </>
